@@ -1,0 +1,93 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffccff, #ff99ff);
+    text-align: center;
+    color: #fff;
+}
+
+/* Encabezado */
+header {
+    background: url('https://www.transparenttextures.com/patterns/confetti.png'), linear-gradient(to right, #ff66b2, #ff3399);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.shadow {
+    color: #ff0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Cuerpo Principal */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Aside */
+aside {
+    background: rgba(255, 102, 153, 0.9);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    color: white;
+}
+
+/* Pie de página */
+footer {
+    background: #ff3399;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Animaciones y detalles decorativos */
+@keyframes confetti {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    left: calc(10% * var(--i));
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: confetti 5s linear infinite;
+}
